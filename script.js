@@ -12,7 +12,9 @@ recarregarTarefas()
 function recarregarTarefas(){
     const tarefasLocalStorage = localStorage.getItem('lista')
 
-    listaDeItens = JSON.parse(tarefasLocalStorage)
+    if (tarefasLocalStorage) {
+        listaDeItens = JSON.parse(tarefasLocalStorage)
+    }
 
     mostrarTarefasNaTela()
 }
