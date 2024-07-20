@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./Styles/output.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body class="h-screen w-full bg-background-img">
+    <div class="bg-gray-300 rounded-lg w-80 sm:w-500px p-5 mx-auto mt-28">
+        <div class="flex justify-between gap-2">
+            <input class="rounded-lg h-10 w-4/6 sm:w-80 outline-none px-3" type="text" placeholder="O que tenho que fazer..." id="input-task">
+            <button class="rounded-lg h-10 bg-green-900 text-white text-lg px-2 sm:px-4 float-right hover:opacity-80 active:opacity-60 font-bold" id="add-task-btn">Adicionar</button>
+        </div>
+        <p id="input-warn" class="text-red-600 pl-2 hidden">Sua tarefa está vazia</p>
+
+        <ul class="w-full mt-8" id="list">          
+            <!-- <li class="group bg-[#f2f2f2] shadow-md flex items-center justify-between h-12 px-4 rounded-md mb-5 hover:"> 
+                <img id="check" class="h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-400 cursor-pointer" src="./Assets/checked.png" alt="check na tarefa">
+                <p class="font-medium text-lg">Lição de casa</p>
+                <img id="delete" class="h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-400 cursor-pointer" src="./Assets/trash.png" alt="apagar tarefa">
+            </li> -->
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
